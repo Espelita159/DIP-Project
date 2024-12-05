@@ -156,5 +156,16 @@ namespace DIP
 
             form2.Show();
         }
+
+        private void convolutionMatrixToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void goToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form3 form3 = new Form3();
+            form3.Show();
+        }
     }
 }

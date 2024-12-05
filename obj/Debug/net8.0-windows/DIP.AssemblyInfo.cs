@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DIP")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e413c72ac5fe667b943f0f5f1eaa58f054bdf910")]
 [assembly: System.Reflection.AssemblyProductAttribute("DIP")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DIP")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

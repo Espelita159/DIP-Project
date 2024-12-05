@@ -20,3 +20,5 @@ C:\Users\raphael\Desktop\Digital Image Processing\DIP\bin\Debug\net8.0-windows\A
 C:\Users\raphael\Desktop\Digital Image Processing\DIP\bin\Debug\net8.0-windows\AForge.Video.dll
 C:\Users\raphael\Desktop\Digital Image Processing\DIP\bin\Debug\net8.0-windows\AForge.Video.DirectShow.dll
 C:\Users\raphael\Desktop\Digital Image Processing\DIP\obj\Debug\net8.0-windows\DIP.csproj.Up2Date
+C:\Users\raphael\Desktop\Digital Image Processing\DIP\obj\Debug\net8.0-windows\DIP.sourcelink.json
+C:\Users\raphael\Desktop\Digital Image Processing\DIP\obj\Debug\net8.0-windows\DIP.Form3.resources

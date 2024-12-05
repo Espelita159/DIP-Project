@@ -42,12 +42,14 @@
             histogramToolStripMenuItem = new ToolStripMenuItem();
             toolStripMenuItem2 = new ToolStripMenuItem();
             sepiaToolStripMenuItem = new ToolStripMenuItem();
+            subtractionToolStripMenuItem = new ToolStripMenuItem();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             openFileDialog1 = new OpenFileDialog();
             saveFileDialog1 = new SaveFileDialog();
             trackBar1 = new TrackBar();
-            subtractionToolStripMenuItem = new ToolStripMenuItem();
+            convolutionMatrixToolStripMenuItem = new ToolStripMenuItem();
+            goToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -56,7 +58,7 @@
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem, toolStripMenuItem1, dIPToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem, toolStripMenuItem1, dIPToolStripMenuItem, convolutionMatrixToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(1024, 24);
@@ -99,57 +101,64 @@
             // pixelCopyToolStripMenuItem
             // 
             pixelCopyToolStripMenuItem.Name = "pixelCopyToolStripMenuItem";
-            pixelCopyToolStripMenuItem.Size = new Size(180, 22);
+            pixelCopyToolStripMenuItem.Size = new Size(165, 22);
             pixelCopyToolStripMenuItem.Text = "Pixel Copy";
             pixelCopyToolStripMenuItem.Click += pixelCopyToolStripMenuItem_Click;
             // 
             // greyscalingToolStripMenuItem
             // 
             greyscalingToolStripMenuItem.Name = "greyscalingToolStripMenuItem";
-            greyscalingToolStripMenuItem.Size = new Size(180, 22);
+            greyscalingToolStripMenuItem.Size = new Size(165, 22);
             greyscalingToolStripMenuItem.Text = "Greyscaling";
             greyscalingToolStripMenuItem.Click += greyscalingToolStripMenuItem_Click;
             // 
             // inversionToolStripMenuItem
             // 
             inversionToolStripMenuItem.Name = "inversionToolStripMenuItem";
-            inversionToolStripMenuItem.Size = new Size(180, 22);
+            inversionToolStripMenuItem.Size = new Size(165, 22);
             inversionToolStripMenuItem.Text = "Inversion";
             inversionToolStripMenuItem.Click += inversionToolStripMenuItem_Click;
             // 
             // mirrorHorizontalToolStripMenuItem
             // 
             mirrorHorizontalToolStripMenuItem.Name = "mirrorHorizontalToolStripMenuItem";
-            mirrorHorizontalToolStripMenuItem.Size = new Size(180, 22);
+            mirrorHorizontalToolStripMenuItem.Size = new Size(165, 22);
             mirrorHorizontalToolStripMenuItem.Text = "Mirror Horizontal";
             mirrorHorizontalToolStripMenuItem.Click += mirrorHorizontalToolStripMenuItem_Click;
             // 
             // mirrorVerticalToolStripMenuItem
             // 
             mirrorVerticalToolStripMenuItem.Name = "mirrorVerticalToolStripMenuItem";
-            mirrorVerticalToolStripMenuItem.Size = new Size(180, 22);
+            mirrorVerticalToolStripMenuItem.Size = new Size(165, 22);
             mirrorVerticalToolStripMenuItem.Text = "Mirror Vertical";
             mirrorVerticalToolStripMenuItem.Click += mirrorVerticalToolStripMenuItem_Click;
             // 
             // histogramToolStripMenuItem
             // 
             histogramToolStripMenuItem.Name = "histogramToolStripMenuItem";
-            histogramToolStripMenuItem.Size = new Size(180, 22);
+            histogramToolStripMenuItem.Size = new Size(165, 22);
             histogramToolStripMenuItem.Text = "Histogram";
             histogramToolStripMenuItem.Click += histogramToolStripMenuItem_Click;
             // 
             // toolStripMenuItem2
             // 
             toolStripMenuItem2.Name = "toolStripMenuItem2";
-            toolStripMenuItem2.Size = new Size(180, 22);
+            toolStripMenuItem2.Size = new Size(165, 22);
             toolStripMenuItem2.Text = "Brightness";
             // 
             // sepiaToolStripMenuItem
             // 
             sepiaToolStripMenuItem.Name = "sepiaToolStripMenuItem";
-            sepiaToolStripMenuItem.Size = new Size(180, 22);
+            sepiaToolStripMenuItem.Size = new Size(165, 22);
             sepiaToolStripMenuItem.Text = "Sepia";
             sepiaToolStripMenuItem.Click += sepiaToolStripMenuItem_Click;
+            // 
+            // subtractionToolStripMenuItem
+            // 
+            subtractionToolStripMenuItem.Name = "subtractionToolStripMenuItem";
+            subtractionToolStripMenuItem.Size = new Size(165, 22);
+            subtractionToolStripMenuItem.Text = "Subtraction";
+            subtractionToolStripMenuItem.Click += subtractionToolStripMenuItem_Click;
             // 
             // pictureBox1
             // 
@@ -188,12 +197,20 @@
             trackBar1.TabIndex = 3;
             trackBar1.Scroll += trackBar1_Scroll;
             // 
-            // subtractionToolStripMenuItem
+            // convolutionMatrixToolStripMenuItem
             // 
-            subtractionToolStripMenuItem.Name = "subtractionToolStripMenuItem";
-            subtractionToolStripMenuItem.Size = new Size(180, 22);
-            subtractionToolStripMenuItem.Text = "Subtraction";
-            subtractionToolStripMenuItem.Click += subtractionToolStripMenuItem_Click;
+            convolutionMatrixToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { goToolStripMenuItem });
+            convolutionMatrixToolStripMenuItem.Name = "convolutionMatrixToolStripMenuItem";
+            convolutionMatrixToolStripMenuItem.Size = new Size(122, 20);
+            convolutionMatrixToolStripMenuItem.Text = "Convolution Matrix";
+            convolutionMatrixToolStripMenuItem.Click += convolutionMatrixToolStripMenuItem_Click;
+            // 
+            // goToolStripMenuItem
+            // 
+            goToolStripMenuItem.Name = "goToolStripMenuItem";
+            goToolStripMenuItem.Size = new Size(180, 22);
+            goToolStripMenuItem.Text = "Go";
+            goToolStripMenuItem.Click += goToolStripMenuItem_Click;
             // 
             // Form1
             // 
@@ -238,5 +255,7 @@
         private TrackBar trackBar1;
         private ToolStripMenuItem sepiaToolStripMenuItem;
         private ToolStripMenuItem subtractionToolStripMenuItem;
+        private ToolStripMenuItem convolutionMatrixToolStripMenuItem;
+        private ToolStripMenuItem goToolStripMenuItem;
     }
 }
